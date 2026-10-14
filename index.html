@@ -184,6 +184,52 @@ ul.plain{color:var(--navy)}ul.plain li::before{width:6px;height:6px}
 #nav{background:#fff;border:1px solid #d5dbe8;border-radius:0}
 #nav button{border:0;color:var(--navy);width:28px}#nav button:hover{background:#f0f2f7;color:var(--navy)}
 #nav span{color:#8791a8}
+
+/* ===== mais contraste ===== */
+:root{--gold:#e0b050}
+.slide p,.card p,.slide .lead,.slide.deep:not(.cover) .lead{color:#0b1730;font-weight:600}
+.src,.card .src,.hint,.kicker b,.light .kicker b,.role,#nav span{color:#3a4560}
+.kicker,.light .kicker{color:#7a5410;font-weight:700}
+h2{font-weight:700;color:#05070f}
+h2 em,.light h2 em{color:#7a5410;font-style:italic}
+.card,.light .card,.card.white,.card.gold{border-top:3px solid #0b1730}
+.card:hover,.card.on{border-top-color:var(--gold)}
+.card .big,.card.gold .big,.card.white .big{color:#0b1730;font-weight:700}
+.card:hover .big{color:#7a5410}
+.node{border:2px solid #0b1730}.node b{color:#7a5410}
+.road{background:#0b1730}.road::after{background:var(--gold)}
+.tab{color:#3a4560}.tab.on,.light .tab.on{color:#05070f;border-bottom:3px solid var(--gold)}
+.track{background:#cfd6e6}
+.face{border:2px solid #0b1730}
+.face .n{color:#7a5410;font-weight:700}
+.tree,.light .tree{background:#e9edf6;border-left:4px solid #0b1730}.tree i{color:#3a4560}
+.tl::before{background:#8791a8}.tl .fill{background:var(--gold)}
+.step::before{background:#0b1730}
+.rn,.rn:hover{border:2px solid #0b1730;font-weight:700}.rr{background:#0b1730;height:2px}
+#rail{background:linear-gradient(#8791a8,#8791a8) 0 16px/100% 2px no-repeat}
+#nav{border:2px solid #0b1730}
+.tag{color:#0b1730;border-bottom:3px solid var(--gold)}
+/* slides escuros alternados */
+.slide.deep:not(.cover){background:#0b1730;color:#fff}
+.slide.deep:not(.cover) h2{color:#fff}
+.slide.deep:not(.cover) h2 em{color:var(--gold)}
+.slide.deep:not(.cover) .kicker{color:var(--gold)}
+.slide.deep:not(.cover) .kicker b{color:#c9d2e6}
+.slide.deep:not(.cover) p,.slide.deep:not(.cover) .src{color:#fff}
+.slide.deep:not(.cover) .card,.slide.deep:not(.cover) .card.white{background:#fff;border-top:4px solid var(--gold)}
+.slide.deep:not(.cover) .card p{color:#0b1730}.slide.deep:not(.cover) .card .src{color:#3a4560}
+.slide.deep:not(.cover) .card.gold{background:var(--gold)}
+.slide.deep:not(.cover) .track{background:#2a3d68}.slide.deep:not(.cover) .fillb{background:var(--gold)}
+.slide.deep:not(.cover) .tl::before{background:#4a5f8c}.slide.deep:not(.cover) .step::before{background:var(--gold)}
+.slide.deep:not(.cover) .step .d{color:var(--gold)}
+.slide.deep:not(.cover) .rn,.slide.deep:not(.cover) .rn:hover{background:transparent;color:#fff;border-color:#fff}
+.slide.deep:not(.cover) .rn.end{background:var(--gold);color:#0b1730;border-color:var(--gold)}
+.slide.deep:not(.cover) .rr{background:#fff}
+.slide.deep:not(.cover) .face{background:#fff;color:#0b1730;border-color:var(--gold)}
+.slide.deep:not(.cover) .face p,.slide.deep:not(.cover) .face h3{color:#0b1730}
+.slide.deep:not(.cover) .face.back{background:var(--gold)}
+.slide.deep:not(.cover) .face .hint{color:#3a4560}
+.slide.deep:not(.cover) p b[style]{color:var(--gold)!important}
 </style>
 </head>
 <body>

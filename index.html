@@ -500,6 +500,21 @@ ul.plain li::before{background:var(--gold)}
 .thanks .soc{padding:6px 12px}.thanks .soc img{width:32px;height:32px}.thanks .soc span{font-size:16px}.thanks .soc small{font-size:13px}
 .thanks .mail{margin-top:12px;font-size:16px}
 .thanks .thx>img{height:min(56vh,440px)}
+
+.fonte::before{content:"Fonte: ";font-weight:800}
+.src.fonte{font-size:14px}
+.card .src.fonte,.tvnote .src.fonte{margin-top:6px}
+
+/* bets: números em destaque */
+.tight .bstats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:16px}
+.tight .bstats .card{padding:22px 24px 16px;text-align:left}
+.tight .bstats .big{font-size:68px;line-height:1;margin-bottom:10px}
+.tight .bstats .card p{font-size:19px;line-height:1.3}
+.bottom3{display:grid;grid-template-columns:1fr 1fr 1.6fr;gap:18px;align-items:stretch}
+.bottom3 .flip{height:190px!important}
+.bottom3 .face{padding:16px 20px}.bottom3 .face.back p{font-size:16px;line-height:1.3}
+.bottom3 .guest{margin:0;max-width:none;padding:12px 16px;gap:14px;align-items:center}
+.bottom3 .guest img{width:84px;height:84px}.bottom3 .guest p{font-size:14px}.bottom3 .guest h3{font-size:19px}
 </style>
 </head>
 <body>
@@ -534,23 +549,36 @@ ul.plain li::before{background:var(--gold)}
     <div class="cmp-r head"><div class="cmp-k"></div><div class="cmp-c">Two-Step Flow clássico</div><div class="cmp-c g">Check Step Flow</div></div>
     <div class="cmp-r"><div class="cmp-k">Origem</div><div class="cmp-c">Lazarsfeld, Berelson e Gaudet (1944); Katz e Lazarsfeld (1955)</div><div class="cmp-c g">Check Step Flow, atualização para o ambiente digital</div></div><div class="cmp-r"><div class="cmp-k">Quem media</div><div class="cmp-c">Líderes de opinião, pessoas próximas</div><div class="cmp-c g">Influenciador digital e algoritmo, em dois elos</div></div><div class="cmp-r"><div class="cmp-k">Quem decide o alcance</div><div class="cmp-c">A mídia de massa e as relações pessoais</div><div class="cmp-c g">O algoritmo, de forma invisível, e quem paga por impulsionamento</div></div><div class="cmp-r"><div class="cmp-k">Papel do público</div><div class="cmp-c">Recebe a influência dos líderes</div><div class="cmp-c g">Vira gatekeeper ético da própria rede</div></div><div class="cmp-r"><div class="cmp-k">Resposta</div><div class="cmp-c">Estudar o fluxo da comunicação</div><div class="cmp-c g">CHECK, STEP e FLOW: sinalizar, decodificar e devolver ação</div></div>
   </div>
+<p class="src fonte" style="margin-top:12px">Lazarsfeld, Berelson e Gaudet (1944); Katz e Lazarsfeld (1955); tese do Check Step Flow</p>
 </section>
 
 <section class="slide">
   <div class="kicker"><b>00</b>Por que importa</div>
   <h2>O ecossistema digital <em>brasileiro em números</em></h2>
   <div class="grid g4 reveal" style="margin-bottom:22px">
-    <div class="card"><div class="big" data-n="185" data-s=" mi" data-d="0">0</div><p>de brasileiros usam a internet, 86,9% da população</p><div class="src">DataReportal, Digital 2026</div></div>
-    <div class="card"><div class="big" data-n="150" data-s=" mi" data-d="0">0</div><p>de identidades em redes sociais, 70,4% da população</p><div class="src">DataReportal, out/2025</div></div>
-    <div class="card"><div class="big" data-n="217" data-s=" mi" data-d="0">0</div><p>de conexões móveis ativas, mais que habitantes</p><div class="src">DataReportal, 2025</div></div>
-    <div class="card"><div class="big" data-n="90.5" data-s="%" data-d="1">0</div><p>das pessoas com 10 anos ou mais usam internet</p><div class="src">IBGE, PNAD Contínua TIC</div></div>
+    <div class="card"><div class="big" data-n="185" data-s=" mi" data-d="0">0</div><p>de brasileiros usam a internet, 86,9% da população</p><div class="src fonte">DataReportal, Digital 2026</div></div>
+    <div class="card"><div class="big" data-n="150" data-s=" mi" data-d="0">0</div><p>de identidades em redes sociais, 70,4% da população</p><div class="src fonte">DataReportal, out/2025</div></div>
+    <div class="card"><div class="big" data-n="217" data-s=" mi" data-d="0">0</div><p>de conexões móveis ativas, mais que habitantes</p><div class="src fonte">DataReportal, 2025</div></div>
+    <div class="card"><div class="big" data-n="90.5" data-s="%" data-d="1">0</div><p>das pessoas com 10 anos ou mais usam internet</p><div class="src fonte">IBGE, PNAD Contínua TIC</div></div>
   </div>
   <div class="tvrow reveal">
     <div class="card"><div class="big" data-n="44" data-s="%" data-d="0">0</div><p>dos brasileiros se informam pela <b>televisão</b> toda semana, um dos maiores alcances do país</p></div>
     <div class="card"><div class="big" data-n="53" data-s="%" data-d="0">0</div><p>também se informam pelas <b>redes sociais</b>, onde o conteúdo passa pelo algoritmo</p></div>
-    <div class="tvnote"><p>As duas telas se complementam: a TV leva informação de qualidade a milhões, e o Check Step Flow ajuda o público a ter o mesmo cuidado com o que chega pelo feed.</p><div class="src">Reuters Institute, Digital News Report 2026 (dados citados pela imprensa brasileira)</div></div>
+    <div class="tvnote"><p>As duas telas se complementam: a TV leva informação de qualidade a milhões, e o Check Step Flow ajuda o público a ter o mesmo cuidado com o que chega pelo feed.</p><div class="src fonte">Reuters Institute, Digital News Report 2026 (dados citados pela imprensa brasileira)</div></div>
   </div>
 </section>
+
+<section class="slide">
+  <div class="kicker"><b>00</b>O desafio</div>
+  <h2>Quase todos se informam nas redes, <em>poucos sabem diferenciar</em></h2>
+  <div class="grid g2 reveal" style="margin-bottom:22px">
+    <div class="card"><div class="big" data-n="85" data-s="%" data-d="0">0</div><p>dos brasileiros se informam por redes sociais</p><div class="src fonte">Truth Quest, 2024, divulgado pela imprensa</div></div>
+    <div class="card"><div class="big" data-n="54" data-s="%" data-d="0">0</div><p>conseguem diferenciar uma notícia verdadeira de uma falsa, a menor taxa entre os países analisados</p><div class="src fonte">Truth Quest, 2024, divulgado pela imprensa</div></div>
+  </div>
+  <div class="talks reveal"><div class="tag">Nossa resposta</div><p><b>Check, Step e Flow ensinam a diferenciar: sinalizar o conteúdo, decodificar o mecanismo e devolver ação ao público.</b></p></div>
+</section>
+
+<!-- 4 desafio fim -->
 
 <!-- 3 comparacao fim -->
 
@@ -570,41 +598,20 @@ ul.plain li::before{background:var(--gold)}
 <section class="slide tight">
   <div class="kicker"><b>04</b>O piloto</div>
   <h2>Um só caso: <em>o mercado das bets</em></h2>
-  <p class="lead" style="margin-bottom:22px;font-size:21px">Episódio "O Algoritmo da Fortuna: o mercado das bets e a indústria da desigualdade", com guias de prevenção em PT e EN. Vire os cartões.</p>
-  <div class="bets reveal">
-    <div class="bflips">
-      <div class="flip" style="height:200px"><div class="in"><div class="face"><div class="tag">Modelo 1</div><h3 class="serif" style="font-size:30px">Rev-Share</h3><div class="hint">Clique para virar</div></div><div class="face back"><p><b>O influenciador recebe uma parte das perdas</b> de cada jogador que trouxe. Quanto mais o seguidor perde, mais ele ganha.</p></div></div></div>
-      <div class="flip" style="height:200px"><div class="in"><div class="face"><div class="tag">Modelo 2</div><h3 class="serif" style="font-size:30px">CPA</h3><div class="hint">Clique para virar</div></div><div class="face back"><p><b>Pagamento fixo por cada novo apostador</b> cadastrado pelo link. O incentivo é trazer gente, não cuidar dela.</p></div></div></div>
-    </div>
-    <div class="bstats">
-      <div class="card"><div class="big" data-n="21" data-s=" bi" data-d="0">0</div><p>R$ por mês via Pix para casas de apostas (R$ 18-21 bi)</p><div class="src">Banco Central, Estudo Especial 119</div></div>
-      <div class="card"><div class="big" data-n="24" data-s=" mi" data-d="0">0</div><p>de pessoas enviaram dinheiro a bets em um mês</p><div class="src">Banco Central, 2024</div></div>
-      <div class="card"><div class="big" data-n="937" data-s="" data-d="0">0</div><p>perfis de influenciadores removidos por publicidade irregular</p><div class="src">Fazenda / SPA, 2026</div></div>
-    </div>
+  <p class="lead" style="margin-bottom:14px;font-size:19px">Episódio "O Algoritmo da Fortuna: o mercado das bets e a indústria da desigualdade", com guias de prevenção em PT e EN.</p>
+  <div class="bstats reveal">
+    <div class="card"><div class="big" style="white-space:nowrap">R$ 18-21 bi</div><p>por mês via Pix para casas de apostas</p><div class="src fonte">Banco Central, Estudo Especial 119</div></div>
+    <div class="card"><div class="big" data-n="24" data-s=" mi" data-d="0">0</div><p>de pessoas enviaram dinheiro a bets em um mês</p><div class="src fonte">Banco Central, 2024</div></div>
+    <div class="card"><div class="big" data-n="937" data-s="" data-d="0">0</div><p>perfis de influenciadores removidos por publicidade irregular</p><div class="src fonte">Fazenda / SPA, 2026</div></div>
   </div>
-  <div class="guest reveal"><img src="assets/renan-circ.jpg" alt="Prof. Renan Fae"><div><div class="tag">Convidado do episódio</div><h3>Prof. Renan Fae</h3><p>Gestor da HF News, laboratório de comunicação da UVV, e mestre em Sociologia. Decodificou os modelos Rev-Share e CPA com a equipe. Não integra a equipe do projeto.</p></div></div>
+  <div class="bottom3 reveal">
+    <div class="flip"><div class="in"><div class="face"><div class="tag">Modelo 1</div><h3 class="serif" style="font-size:28px">Rev-Share</h3><div class="hint">Clique para virar</div></div><div class="face back"><p><b>O influenciador recebe uma parte das perdas</b> de cada jogador que trouxe.</p><div class="src fonte">Banco Central, Estudo Especial 119</div></div></div></div>
+    <div class="flip"><div class="in"><div class="face"><div class="tag">Modelo 2</div><h3 class="serif" style="font-size:28px">CPA</h3><div class="hint">Clique para virar</div></div><div class="face back"><p><b>Pagamento fixo por cada novo apostador</b> cadastrado pelo link.</p><div class="src fonte">Banco Central, Estudo Especial 119</div></div></div></div>
+    <div class="guest"><img src="assets/renan-circ.jpg" alt="Prof. Renan Fae"><div><div class="tag">Mentor e convidado do episódio</div><h3>Prof. Renan Fae</h3><p>Gestor da HF News, laboratório de comunicação da UVV, e mestre em Sociologia. Foi mentor do projeto.</p><div class="src fonte" style="margin-top:4px">Perfil profissional no LinkedIn</div></div></div>
+  </div>
 </section>
 
-<!-- 6 repositorio -->
-<section class="slide light">
-  <div class="kicker"><b>05</b>O repositório</div>
-  <h2>O código do projeto é <em>público e aberto</em></h2>
-  <div class="grid g2" style="grid-template-columns:1.1fr 1fr;gap:34px">
-    <div class="tree reveal">
-      <div><b>checkstepflow / Check-Step-Flow</b> <i>público</i></div>
-      <div>├─ index.html <i>1,5 MB · site em página única</i></div>
-      <div>├─ guias PT e EN <i>PDF embutidos</i></div>
-      <div>├─ site bilíngue <i>PT / EN</i></div>
-      <div>└─ GitHub Pages <i>publicação automática</i></div>
-    </div>
-    <div class="grid g2" style="gap:16px">
-      <div class="card"><div class="big" data-n="9" data-s="" data-d="0" style="font-size:46px">0</div><p>commits</p></div>
-      <div class="card gold"><div class="big" data-n="2" data-s="" data-d="0" style="font-size:46px">0</div><p>pull requests mergeados</p></div>
-      <div class="card gold"><div class="big" style="font-size:36px;padding:6px 0">09/08/26</div><p>criação</p></div>
-      <div class="card"><div class="big" style="font-size:46px">PT·EN</div><p>idiomas</p></div>
-    </div>
-  </div>
-</section>
+
 
 <section class="slide">
   <div class="kicker"><b>00</b>Código aberto</div>
@@ -630,6 +637,7 @@ ul.plain li::before{background:var(--gold)}
   </div>
   <div class="route reveal"><div class="rn">Branch</div><div class="rr"></div><div class="rn">Commits</div><div class="rr"></div><div class="rn">Pull request</div><div class="rr"></div><div class="rn">Revisão</div><div class="rr"></div><div class="rn end">Merge e site no ar</div></div>
   <p class="src" style="margin-top:20px;font-size:15px">O histórico do GitHub registra o porquê de cada mudança, não só o resultado.</p>
+<p class="src fonte" style="margin-top:10px">Histórico de commits e pull requests no GitHub</p>
 </section>
 
 <!-- 8 equipe -->
@@ -648,14 +656,14 @@ ul.plain li::before{background:var(--gold)}
   <div class="kicker"><b>08</b>Alcance e trajetória</div>
   <h2>Reconhecimento e <em>alinhamento com a ONU</em></h2>
   <div class="grid g3 reveal" style="margin-bottom:24px">
-    <div class="card white"><div class="big" data-n="2200" data-s="" data-d="0">0</div><p>submissões de 129 países no UNESCO Youth Hackathon 2026, onde o projeto participou</p></div>
-    <div class="card white"><div class="big" data-n="80" data-s="" data-d="0">0</div><p>iniciativas selecionadas no Prêmio LED 2027, entre elas o Check Step Flow</p></div>
-    <div class="card gold"><div class="big">2027</div><p>Próximo passo: Intercom e Expocom, com apoio de contatos da universidade</p></div>
+    <div class="card white"><div class="big" data-n="2200" data-s="" data-d="0">0</div><h3>Reconhecimento UNESCO</h3><p>Respaldo internacional: o projeto participou do Youth Hackathon 2026, entre submissões de 129 países</p><div class="src fonte">UNESCO, comunicado de 25/09/2026</div></div>
+    <div class="card white"><div class="big" data-n="80" data-s="" data-d="0">0</div><p>iniciativas selecionadas no Prêmio LED 2027, entre elas o Check Step Flow</p><div class="src fonte">Movimento LED, somos.globo.com, 09/10/2026</div></div>
+    <div class="card gold"><div class="big">2027</div><p>Próximo passo: Intercom e Expocom, com apoio de contatos da universidade</p><div class="src fonte">Plano Intercom/Expocom do projeto, 26/08/2026</div></div>
   </div>
   <div class="grid g3 reveal ods">
-    <div class="odsc"><img src="assets/ods/ods4.png" alt="ODS 4"><div><h3>ODS 4</h3><p>Educação de qualidade: guia e site de acesso público e gratuito.</p></div></div>
-    <div class="odsc"><img src="assets/ods/ods10.png" alt="ODS 10"><div><h3>ODS 10</h3><p>Redução das desigualdades: foco no público de baixa renda, o mais exposto às bets.</p></div></div>
-    <div class="odsc"><img src="assets/ods/ods16.png" alt="ODS 16"><div><h3>ODS 16</h3><p>Instituições eficazes: cidadãos capazes de escrutínio informacional.</p></div></div>
+    <div class="odsc"><img src="assets/ods/ods4.png" alt="ODS 4"><div><h3>ODS 4</h3><p>Educação de qualidade: guia e site de acesso público e gratuito.</p><div class="src fonte">ONU, Agenda 2030</div></div></div>
+    <div class="odsc"><img src="assets/ods/ods10.png" alt="ODS 10"><div><h3>ODS 10</h3><p>Redução das desigualdades: foco no público de baixa renda, o mais exposto às bets.</p><div class="src fonte">ONU, Agenda 2030</div></div></div>
+    <div class="odsc"><img src="assets/ods/ods16.png" alt="ODS 16"><div><h3>ODS 16</h3><p>Instituições eficazes: cidadãos capazes de escrutínio informacional.</p><div class="src fonte">ONU, Agenda 2030</div></div></div>
   </div>
 </section>
 
@@ -664,10 +672,10 @@ ul.plain li::before{background:var(--gold)}
   <div class="kicker"><b>09</b>Próximos passos</div>
   <h2>Candidaturas em 2027 e <em>palestras nas universidades</em></h2>
   <div class="grid g4 reveal" style="margin-bottom:24px">
-    <div class="card"><h3>Expocom Sudeste</h3><p>Produto experimental indicado pela UVV. Categoria PT 10, Comunicação e inovação.</p><div class="src">Janela estimada: fev a mar/2027</div></div>
-    <div class="card"><h3>Expocom Nacional</h3><p>Etapa seguinte do Intercom, para os trabalhos aprovados na regional.</p><div class="src">Janela estimada: mai a jun/2027</div></div>
-    <div class="card"><h3>Revista Intercom</h3><p>Artigo científico depois do Expocom, em fluxo contínuo e sem pressa.</p><div class="src">Sem data de chamada</div></div>
-    <div class="card gold"><h3>TCC</h3><p>O conteúdo amadurece em texto acadêmico completo.</p><div class="src">Previsto para 2028</div></div>
+    <div class="card"><h3>Expocom Sudeste</h3><p>Produto experimental indicado pela UVV. Categoria PT 10, Comunicação e inovação.</p><div class="src">Janela estimada: fev a mar/2027</div><div class="src fonte">Calendário Intercom 2026, como base</div></div>
+    <div class="card"><h3>Expocom Nacional</h3><p>Etapa seguinte do Intercom, para os trabalhos aprovados na regional.</p><div class="src">Janela estimada: mai a jun/2027</div><div class="src fonte">Calendário Intercom 2026, como base</div></div>
+    <div class="card"><h3>Revista Intercom</h3><p>Artigo científico depois do Expocom, em fluxo contínuo e sem pressa.</p><div class="src">Sem data de chamada</div><div class="src fonte">revistas.intercom.org.br</div></div>
+    <div class="card gold"><h3>TCC</h3><p>O conteúdo amadurece em texto acadêmico completo.</p><div class="src">Previsto para 2028</div><div class="src fonte">Plano do projeto</div></div>
   </div>
   <div class="talks reveal"><div class="tag">Palestras</div><p><b>Pretendemos levar o Check Step Flow em palestras na UVV e na UFES</b>, para apresentar a tese do Two-Step Flow Algorítmico e o roteiro de checagem a estudantes e professores.</p></div>
 </section>
@@ -676,11 +684,11 @@ ul.plain li::before{background:var(--gold)}
   <div class="kicker"><b>10</b>O que vem a seguir</div>
   <h2>Próximos cinco temas <em>da trilha</em></h2>
   <div class="grid reveal" style="grid-template-columns:repeat(5,1fr);gap:14px">
-    <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">1</div><h3>Caso ela diga não</h3><div class="hint">Virar</div></div><div class="face back"><p>Misoginia digital: pedidos de casamento recusados viram espetáculo monetizado.</p></div></div></div>
-    <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">2</div><h3>Soluções milagrosas</h3><div class="hint">Virar</div></div><div class="face back"><p>Curas, suplementos e cursos de enriquecimento sem respaldo técnico.</p></div></div></div>
-    <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">3</div><h3>Desinformação eleitoral</h3><div class="hint">Virar</div></div><div class="face back"><p>Influenciadores e polarização no ciclo de 2026.</p></div></div></div>
-    <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">4</div><h3>IA e deepfakes</h3><div class="hint">Virar</div></div><div class="face back"><p>Conteúdo sintético como terceira camada de mediação, ainda mais opaca.</p></div></div></div>
-    <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">5</div><h3>Publicidade a crianças</h3><div class="hint">Virar</div></div><div class="face back"><p>Kidfluencers e publicidade não sinalizada dirigida a menores.</p></div></div></div>
+    <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">1</div><h3>Caso ela diga não</h3><div class="hint">Virar</div></div><div class="face back"><p>Misoginia digital: pedidos de casamento recusados viram espetáculo monetizado.</p><div class="src fonte">IBGE, 2025</div></div></div></div>
+    <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">2</div><h3>Soluções milagrosas</h3><div class="hint">Virar</div></div><div class="face back"><p>Curas, suplementos e cursos de enriquecimento sem respaldo técnico.</p><div class="src fonte">CVM, supervisão desde 2022</div></div></div></div>
+    <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">3</div><h3>Desinformação eleitoral</h3><div class="hint">Virar</div></div><div class="face back"><p>Influenciadores e polarização no ciclo de 2026.</p><div class="src fonte">Reuters Institute, 2026</div></div></div></div>
+    <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">4</div><h3>IA e deepfakes</h3><div class="hint">Virar</div></div><div class="face back"><p>Conteúdo sintético como terceira camada de mediação, ainda mais opaca.</p><div class="src fonte">Reuters Institute, 2026</div></div></div></div>
+    <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">5</div><h3>Publicidade a crianças</h3><div class="hint">Virar</div></div><div class="face back"><p>Kidfluencers e publicidade não sinalizada dirigida a menores.</p><div class="src fonte">SPA, 46 processos sobre crianças e apostas</div></div></div></div>
   </div>
   <p style="margin-top:30px;font-size:18px"><b style="color:var(--gold)">checkstepflow@gmail.com</b> &nbsp;·&nbsp; checkstepflow.github.io/Check-Step-Flow</p>
 </section>

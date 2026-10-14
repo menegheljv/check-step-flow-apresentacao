@@ -538,6 +538,10 @@ ul.plain li::before{background:var(--gold)}
 .cover-slogan,.slogan,.thanks .slogan{font-family:"Barlow",system-ui,sans-serif!important;font-weight:800!important;font-style:normal!important;text-transform:uppercase;letter-spacing:.14em;color:#fff!important}
 .cover-slogan{font-size:clamp(24px,2.6vw,34px)}
 .thanks .slogan{font-size:24px}
+
+.rn small{display:block;font-weight:600;font-size:13px;color:#44506b;margin-top:2px;letter-spacing:.02em}
+.rn.end small{color:#44506b}
+.how{margin-top:16px;font-size:19px;color:#fff!important;max-width:1000px}
 </style>
 </head>
 <body>
@@ -662,17 +666,23 @@ ul.plain li::before{background:var(--gold)}
 <!-- 7 fluxo -->
 <section class="slide deep">
   <div class="kicker"><b>06</b>Como é mantido</div>
-  <h2>Cada mudança passa por <em>branch e pull request</em></h2>
+  <h2>Toda mudança é <em>revisada antes de ir ao ar</em></h2>
   <div class="tl reveal">
     <div class="fill"></div>
     <div class="step"><div class="d">08/08</div><p>Primeira versão do site no ar</p></div>
     <div class="step"><div class="d">12/08</div><p>Guias em português e inglês e ajustes de conteúdo</p></div>
-    <div class="step"><div class="d">12/10</div><p>Redesign: Globo LED, diagrama animado, flash cards</p></div>
-    <div class="step"><div class="d">12/10</div><p>Estatísticas e traduções em português e inglês revisadas</p></div>
+    <div class="step"><div class="d">12/10</div><p>Novo visual: Globo LED, diagrama animado e cartões que viram</p></div>
+    <div class="step"><div class="d">12/10</div><p>Números e traduções revisados em português e inglês</p></div>
   </div>
-  <div class="route reveal"><div class="rn">Branch</div><div class="rr"></div><div class="rn">Commits</div><div class="rr"></div><div class="rn">Pull request</div><div class="rr"></div><div class="rn">Revisão</div><div class="rr"></div><div class="rn end">Merge e site no ar</div></div>
-  <p class="src" style="margin-top:20px;font-size:15px">O histórico do GitHub registra o porquê de cada mudança, não só o resultado.</p>
-<p class="src fonte" style="margin-top:10px">Histórico de commits e pull requests no GitHub</p>
+  <div class="route reveal">
+    <div class="rn">Cópia de trabalho<small>branch</small></div><div class="rr"></div>
+    <div class="rn">Alterações salvas<small>commits</small></div><div class="rr"></div>
+    <div class="rn">Pedido de revisão<small>pull request</small></div><div class="rr"></div>
+    <div class="rn">Conferência<small>revisão</small></div><div class="rr"></div>
+    <div class="rn end">Site atualizado<small>merge</small></div>
+  </div>
+  <p class="how reveal">Em outras palavras: a mudança é feita numa cópia, salva passo a passo, conferida por alguém e só então substitui a versão que está no ar.</p>
+  <p class="src fonte" style="margin-top:10px">Histórico de alterações do projeto no GitHub</p>
 </section>
 
 <!-- 8 equipe -->

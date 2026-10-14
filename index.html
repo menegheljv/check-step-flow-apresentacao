@@ -65,7 +65,7 @@ p{font-size:19px;line-height:1.5}
 @keyframes run{0%{left:84px}100%{left:630px}}
 /* cadeia */
 .chain{display:flex;align-items:center;margin:22px 0 26px}
-.node{flex:0 0 220px;border-radius:4px;padding:20px 20px;text-align:center;background:var(--deep);border:2px solid var(--gold);cursor:pointer;transition:translate .3s,scale .3s,background .3s,box-shadow .3s}
+.node{flex:0 0 200px;border-radius:4px;padding:20px 20px;text-align:center;background:var(--deep);border:2px solid var(--gold);cursor:pointer;transition:translate .3s,scale .3s,background .3s,box-shadow .3s}
 .node b{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
 .node span{font-size:21px;font-family:"Playfair Display",serif;font-weight:700}
 .node:hover,.node.on{translate:0 -7px;scale:1.05;box-shadow:6px 10px 0 var(--gold)}
@@ -519,6 +519,7 @@ ul.plain li::before{background:var(--gold)}
 .slide.deep.cover{flex-direction:column;gap:26px}
 .cover .logo{width:min(64vh,520px)!important;height:min(64vh,520px)!important}
 .cover-slogan{font-family:"Arsenica","Arsenica Trial","Playfair Display",Georgia,serif;font-style:italic;font-size:clamp(34px,3.6vw,48px);color:var(--gold);text-align:center;line-height:1.15}
+.chain .node{flex:0 0 200px!important}
 </style>
 </head>
 <body>
@@ -535,12 +536,14 @@ ul.plain li::before{background:var(--gold)}
   <div class="kicker"><b>01</b>A ideia</div>
   <h2>Uma teoria de 1944, <em>atualizada para o feed</em></h2>
   <div class="chain reveal">
-    <div class="node on" data-p="p1"><b>1º elo</b><span>Influenciador</span></div><div class="road"></div>
+    <div class="node on" data-p="p0"><b>Emissor</b><span>Mídia ou fonte</span></div><div class="road"></div>
+    <div class="node" data-p="p1"><b>1º elo</b><span>Influenciador</span></div><div class="road"></div>
     <div class="node" data-p="p2"><b>2º elo</b><span>Algoritmo</span></div><div class="road"></div>
     <div class="node" data-p="p3"><b>Destino</b><span>Você</span></div>
   </div>
   <div class="explain">
-    <div class="panel on" id="p1"><p class="lead">Em 1944, Lazarsfeld e Katz mostraram que a mídia chega ao público passando por <b>líderes de opinião</b>. É o Two-Step Flow, ainda válido: o influenciador é o primeiro elo.</p></div>
+    <div class="panel on" id="p0"><p class="lead">Tudo começa no <b>emissor</b>, seja uma mídia ou uma fonte, que produz o <b>conteúdo</b> e o coloca em circulação antes de ele passar pelos dois elos até chegar a você.</p></div>
+    <div class="panel" id="p1"><p class="lead">Em 1944, Lazarsfeld e Katz mostraram que a mídia chega ao público passando por <b>líderes de opinião</b>. É o Two-Step Flow, ainda válido: o influenciador é o primeiro elo.</p></div>
     <div class="panel" id="p2"><p class="lead">Hoje existe um <b>segundo mediador invisível</b>. O algoritmo decide o alcance de cada mensagem antes de ela chegar a você, e quem paga o impulsionamento influencia o que aparece.</p></div>
     <div class="panel" id="p3"><p class="lead">Quem recebe deixa de ser plateia: com método, vira <b>gatekeeper ético</b> da própria rede. A tese tem nome: <b>Two-Step Flow Algorítmico</b>.</p></div>
   </div>

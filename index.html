@@ -413,6 +413,57 @@ ul.plain li::before{background:var(--gold)}
 .card.gold .big,.grid>.card.gold:nth-child(n) .big,.grid>.card:nth-child(4n+4) .big,.slide.deep:not(.cover) .grid>.card:nth-child(4n+4) .big{-webkit-text-stroke:2px #05070f;filter:none;color:transparent!important}
 .card:hover .big{color:transparent!important;scale:1.06}
 .step .d{font-size:32px}
+
+.thanks .thx{display:flex;align-items:center;justify-content:space-between;gap:60px;max-width:1400px}
+.thanks .thx img{height:min(62vh,520px);width:auto;border-radius:20px;display:block;box-shadow:0 0 0 1px #2a4075}
+
+/* ===== blocos brancos: letras azul-escuro e dourado ===== */
+:root{--gd:#9a6a10;--nv:#0b1730}
+.card,.light .card,.card.white,.card.gold,.slide.deep:not(.cover) .card,.grid>.card:nth-child(n),.grid>.card.gold:nth-child(n),.grid>.card:nth-child(4n+4),.slide.deep:not(.cover) .grid>.card:nth-child(n),.slide.deep:not(.cover) .grid>.card:nth-child(4n+4),.slide.deep:not(.cover) .grid>.card.gold:nth-child(n){background:#fff!important;box-shadow:none!important;border-top:5px solid var(--gold)!important;border-radius:16px}
+.card:hover,.card.on{box-shadow:0 0 0 3px var(--gold)!important}
+.card p,.grid>.card:nth-child(n) p,.slide.deep:not(.cover) .grid>.card:nth-child(n) p,.card.gold p,.grid>.card:nth-child(4n+4) p,.slide.deep:not(.cover) .grid>.card:nth-child(4n+4) p{color:var(--nv)!important}
+.card h3,.grid>.card:nth-child(n) h3,.card.gold h3,.grid>.card:nth-child(4n+4) h3,.slide.deep:not(.cover) .grid>.card:nth-child(n) h3{color:var(--gd)!important}
+.card .src,.grid>.card:nth-child(n) .src,.card.gold .src,.grid>.card:nth-child(4n+4) .src,.slide.deep:not(.cover) .grid>.card:nth-child(n) .src,.slide.deep:not(.cover) .card .src{color:#44506b!important}
+.card .big,.grid>.card:nth-child(n) .big,.slide.deep:not(.cover) .grid>.card:nth-child(n) .big,.card.gold .big,.grid>.card:nth-child(4n+4) .big,.slide.deep:not(.cover) .grid>.card:nth-child(4n+4) .big{-webkit-text-stroke:2px var(--gd);filter:none;color:transparent!important;-webkit-mask-image:none;mask-image:none}
+.card .tag,.card ul.plain,.card ul.plain li{color:var(--nv)!important}
+.card .tag{border-bottom-color:var(--gold)}
+.card ul.plain li::before{background:var(--gold)}
+.guest,.odsc,.slide.deep:not(.cover) .odsc,.tree,.talks{background:#fff!important;border:0;box-shadow:none}
+.tree{color:var(--nv)!important;border-left:6px solid var(--gold);border-radius:16px}.tree b{color:var(--gd)}.tree i{color:#44506b}
+.guest{border-top:5px solid var(--gold);border-radius:16px}
+.guest h3,.odsc h3{color:var(--gd)!important}.guest p,.odsc p{color:var(--nv)!important}.guest .tag{color:var(--nv)!important}
+.odsc{border-top:5px solid var(--gold);border-radius:16px}
+.talks{border-top:5px solid var(--gold);border-radius:16px}.talks p{color:var(--nv)!important}.talks b{color:var(--gd)}.talks .tag{color:var(--gd)!important;border-bottom-color:var(--gold)}
+.cmp-c,.cmp-c.g{background:#fff;color:var(--nv);box-shadow:none;border-radius:14px}
+.cmp-c.g{color:var(--gd);font-weight:700}
+.head .cmp-c{color:var(--nv)}.head .cmp-c.g{color:var(--gd)}
+.node,.chain .node:nth-of-type(n){background:#fff;color:var(--nv);border:0;border-radius:16px}.node b{color:var(--gd)}.node span{color:var(--nv)}
+.node.on{background:#fff!important;box-shadow:0 0 0 4px var(--gold)}.node.on b{color:var(--gd)}.node.on span{color:var(--nv)}
+.tab,.slide.deep:not(.cover) .tab{background:#fff;color:var(--nv);border:0}
+.tab.on,.light .tab.on,.slide.deep:not(.cover) .tab.on{background:#fff;color:var(--gd);box-shadow:0 0 0 3px var(--gold);border:0}
+.face{background:#fff!important;border:0!important;border-top:5px solid var(--gold)!important;border-radius:16px;color:var(--nv)}
+.face h3,.face p{color:var(--nv)!important}.face .n{color:transparent!important;-webkit-text-stroke:2px var(--gd);-webkit-mask-image:none;mask-image:none;filter:none}.face .hint{color:#44506b!important}.face .tag{color:var(--gd)!important}
+.flip .face.back,.flip:nth-child(n) .face.back,.slide.deep:not(.cover) .flip .face.back,.slide.deep:not(.cover) .flip:nth-child(n) .face.back{background:#fff!important;border-top:5px solid var(--nv)!important;box-shadow:inset 0 0 0 3px var(--gold)}
+.flip .face.back p,.flip:nth-child(n) .face.back p,.slide.deep:not(.cover) .flip:nth-child(n) .face.back p{color:var(--nv)!important}.face.back .hint{color:var(--gd)!important}
+.route .rn:nth-child(n),.slide.deep:not(.cover) .route .rn:nth-child(n){background:#fff;color:var(--nv);border:0;border-radius:14px}.route .rn.end,.slide.deep:not(.cover) .route .rn.end{background:#fff;color:var(--gd);box-shadow:0 0 0 3px var(--gold)}
+.thanks .thx img{box-shadow:none}
+#nav{background:#fff;box-shadow:none}#nav button{color:var(--nv)}#nav span{color:var(--nv)}
+
+.bets{display:grid;grid-template-columns:1fr 1.5fr;gap:22px;align-items:stretch}
+.bflips{display:grid;gap:16px}
+.bstats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bstats .card{padding:20px 20px 16px}.bstats .big{font-size:44px}.bstats .card p{font-size:16px;line-height:1.3}.bstats .src{font-size:14px;margin-top:8px}
+.guest{margin-top:20px}
+
+.bar{margin:10px 0}.bar span{font-size:19px;color:#fff;font-weight:600}.bar span b{color:var(--gold)}
+.track{background:#1b2d57;height:14px}.fillb{background:var(--gold)!important}
+
+.tight{padding-top:56px;padding-bottom:100px}
+.tight h2{margin-bottom:16px;font-size:clamp(36px,3.6vw,46px)}
+.tight .lead{margin-bottom:14px!important;font-size:19px!important}
+.tight .flip{height:170px!important}.tight .face{padding:18px 22px}
+.tight .bstats .card{padding:16px 18px 12px}.tight .bstats .big{font-size:38px;margin-bottom:6px}
+.tight .guest{margin-top:14px;padding:12px 18px;gap:18px}.tight .guest img{width:84px;height:84px}.tight .guest h3{font-size:20px;margin:4px 0 2px}.tight .guest p{font-size:15px}
 </style>
 </head>
 <body>
@@ -449,19 +500,23 @@ ul.plain li::before{background:var(--gold)}
   </div>
 </section>
 
-<!-- 3 dados -->
-<section class="slide deep">
-  <div class="kicker"><b>02</b>Por que importa</div>
-  <h2>Os números que <em>sustentam o projeto</em></h2>
-  <div class="grid g4 reveal" style="margin-bottom:26px">
-    <div class="card white"><div class="big" data-n="90.5" data-s="%" data-d="1">0</div><p>dos brasileiros com 10 anos ou mais usam internet</p><div class="src">IBGE, PNAD TIC 2025-26</div></div>
-    <div class="card white"><div class="big" data-n="24" data-s=" mi" data-d="0">0</div><p>de pessoas enviaram dinheiro a bets em um único mês</p><div class="src">Banco Central, 2024</div></div>
-    <div class="card white"><div class="big" data-n="937" data-s="" data-d="0">0</div><p>perfis de influenciadores removidos por publicidade irregular</p><div class="src">Fazenda / SPA, 2026</div></div>
-    <div class="card gold"><div class="big" style="font-size:33px;padding:14px 0 6px;white-space:nowrap">R$ 18-21 bi</div><p>por mês via Pix para casas de apostas</p><div class="src">Banco Central, Estudo Especial 119</div></div>
+<section class="slide">
+  <div class="kicker"><b>00</b>Por que importa</div>
+  <h2>O ecossistema digital <em>brasileiro em números</em></h2>
+  <div class="grid g4 reveal" style="margin-bottom:22px">
+    <div class="card"><div class="big" data-n="185" data-s=" mi" data-d="0">0</div><p>de brasileiros usam a internet, 86,9% da população</p><div class="src">DataReportal, Digital 2026</div></div>
+    <div class="card"><div class="big" data-n="150" data-s=" mi" data-d="0">0</div><p>de identidades em redes sociais, 70,4% da população</p><div class="src">DataReportal, out/2025</div></div>
+    <div class="card"><div class="big" data-n="217" data-s=" mi" data-d="0">0</div><p>de conexões móveis ativas, mais que habitantes</p><div class="src">DataReportal, 2025</div></div>
+    <div class="card"><div class="big" data-n="90.5" data-s="%" data-d="1">0</div><p>das pessoas com 10 anos ou mais usam internet</p><div class="src">IBGE, PNAD Contínua TIC</div></div>
   </div>
-  <div class="bar"><span>Uso de internet entre mulheres <b>91,1%</b></span><div class="track"><div class="fillb" data-w="91.1"></div></div></div>
-  <div class="bar"><span>Uso de internet entre homens <b>89,9%</b></span><div class="track"><div class="fillb" data-w="89.9"></div></div></div>
+  <div class="bar"><span>Redes sociais como fonte de notícias, por semana <b>53%</b></span><div class="track"><div class="fillb" data-w="53"></div></div></div>
+  <div class="bar"><span>Televisão como fonte de notícias, por semana <b>44%</b></span><div class="track"><div class="fillb" data-w="44"></div></div></div>
+  <p class="src" style="margin-top:10px">Reuters Institute, Digital News Report 2026 (dados citados pela imprensa brasileira). A confiança nas notícias no Brasil está no menor nível em 12 anos.</p>
 </section>
+
+<!-- 3 comparacao fim -->
+
+
 
 <!-- 4 metodologia -->
 <section class="slide light">
@@ -474,14 +529,20 @@ ul.plain li::before{background:var(--gold)}
 </section>
 
 <!-- 5 piloto -->
-<section class="slide">
+<section class="slide tight">
   <div class="kicker"><b>04</b>O piloto</div>
-  <h2>Primeiro caso: <em>o mercado das bets</em></h2>
-  <p class="lead" style="margin-bottom:22px;font-size:21px">Episódio "O Algoritmo da Fortuna: o mercado das bets e a indústria da desigualdade". Vire os cartões.</p>
-  <div class="grid g3 reveal">
-    <div class="flip" style="height:220px"><div class="in"><div class="face"><div class="tag">Modelo 1</div><h3 class="serif" style="font-size:32px">Rev-Share</h3><div class="hint">Clique para virar</div></div><div class="face back"><p><b>O influenciador recebe uma parte das perdas</b> de cada jogador que trouxe. Quanto mais o seguidor perde, mais ele ganha.</p></div></div></div>
-    <div class="flip" style="height:220px"><div class="in"><div class="face"><div class="tag">Modelo 2</div><h3 class="serif" style="font-size:32px">CPA</h3><div class="hint">Clique para virar</div></div><div class="face back"><p><b>Pagamento fixo por cada novo apostador</b> cadastrado a partir do link. O incentivo é trazer gente, não cuidar dela.</p></div></div></div>
-    <div class="flip" style="height:220px"><div class="in"><div class="face"><div class="tag">Material</div><h3 class="serif" style="font-size:32px">Guias PT e EN</h3><div class="hint">Clique para virar</div></div><div class="face back"><p><b>Guia de prevenção ao vício em apostas</b>, aberto e gratuito, pensado para abrir em qualquer celular. Formatos: podcast, YouTube e LinkedIn.</p></div></div></div>
+  <h2>Um só caso: <em>o mercado das bets</em></h2>
+  <p class="lead" style="margin-bottom:22px;font-size:21px">Episódio "O Algoritmo da Fortuna: o mercado das bets e a indústria da desigualdade", com guias de prevenção em PT e EN. Vire os cartões.</p>
+  <div class="bets reveal">
+    <div class="bflips">
+      <div class="flip" style="height:200px"><div class="in"><div class="face"><div class="tag">Modelo 1</div><h3 class="serif" style="font-size:30px">Rev-Share</h3><div class="hint">Clique para virar</div></div><div class="face back"><p><b>O influenciador recebe uma parte das perdas</b> de cada jogador que trouxe. Quanto mais o seguidor perde, mais ele ganha.</p></div></div></div>
+      <div class="flip" style="height:200px"><div class="in"><div class="face"><div class="tag">Modelo 2</div><h3 class="serif" style="font-size:30px">CPA</h3><div class="hint">Clique para virar</div></div><div class="face back"><p><b>Pagamento fixo por cada novo apostador</b> cadastrado pelo link. O incentivo é trazer gente, não cuidar dela.</p></div></div></div>
+    </div>
+    <div class="bstats">
+      <div class="card"><div class="big" data-n="21" data-s=" bi" data-d="0">0</div><p>R$ por mês via Pix para casas de apostas (R$ 18-21 bi)</p><div class="src">Banco Central, Estudo Especial 119</div></div>
+      <div class="card"><div class="big" data-n="24" data-s=" mi" data-d="0">0</div><p>de pessoas enviaram dinheiro a bets em um mês</p><div class="src">Banco Central, 2024</div></div>
+      <div class="card"><div class="big" data-n="937" data-s="" data-d="0">0</div><p>perfis de influenciadores removidos por publicidade irregular</p><div class="src">Fazenda / SPA, 2026</div></div>
+    </div>
   </div>
   <div class="guest reveal"><img src="assets/renan.jpg" alt="Prof. Renan Fae"><div><div class="tag">Convidado do episódio</div><h3>Prof. Renan Fae</h3><p>Gestor da HF News, laboratório de comunicação da UVV, e mestre em Sociologia. Decodificou os modelos Rev-Share e CPA com a equipe. Não integra a equipe do projeto.</p></div></div>
 </section>
@@ -584,6 +645,18 @@ ul.plain li::before{background:var(--gold)}
     <div class="flip" style="height:260px"><div class="in"><div class="face"><div class="n">5</div><h3>Publicidade a crianças</h3><div class="hint">Virar</div></div><div class="face back"><p>Kidfluencers e publicidade não sinalizada dirigida a menores.</p></div></div></div>
   </div>
   <p style="margin-top:30px;font-size:18px"><b style="color:var(--gold)">checkstepflow@gmail.com</b> &nbsp;·&nbsp; checkstepflow.github.io/Check-Step-Flow</p>
+</section>
+
+<section class="slide thanks">
+  <div class="thx">
+    <div>
+      <div class="kicker"><b>00</b>Obrigado</div>
+      <h2 style="font-size:clamp(56px,6vw,84px);margin-bottom:26px">Obrigado pela <em>oportunidade</em></h2>
+      <p class="lead" style="max-width:560px">Agradecemos ao Prêmio LED Globo, à Globo e à Fundação Roberto Marinho pela atenção ao Check Step Flow.</p>
+      <p style="margin-top:34px;font-size:20px"><b style="color:var(--gold)">checkstepflow@gmail.com</b><br>checkstepflow.github.io/Check-Step-Flow</p>
+    </div>
+    <img src="assets/globo-led.png" alt="Prêmio LED Globo, Globo e Fundação Roberto Marinho">
+  </div>
 </section>
 
 <div id="rail"></div><div id="mark"></div>

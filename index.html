@@ -127,6 +127,63 @@ ul.plain{list-style:none;font-size:18px;line-height:1.9}ul.plain li::before{cont
 #nav button{border:2px solid var(--gold);background:transparent;color:var(--gold);width:32px;height:32px;border-radius:3px;font-size:16px;cursor:pointer;transition:.2s}
 #nav button:hover{background:var(--gold);color:var(--navy)}
 #nav span{font-size:13px;color:var(--muted);min-width:54px;text-align:center;font-weight:700}
+
+/* ===== versão clean: plano, fino, muito respiro ===== */
+body{background:#0b1730;background-image:none}
+#stage{box-shadow:none}#stage::before{display:none}
+.slide,.slide.deep{background:#fff;color:var(--navy);padding:84px 110px 110px}
+.slide.deep.cover{background:var(--navy);color:#fff}
+.slide.deep:not(.cover) .lead,.slide .lead{color:#4a556e}
+.slide.deep.cover .lead{color:var(--muted)}
+.kicker,.light .kicker{color:#9a7424;font-weight:600;letter-spacing:.22em;font-size:12px}
+.kicker b,.light .kicker b{color:#9aa3b8;font-weight:500}
+h2{font-weight:500;font-size:46px;margin-bottom:44px;letter-spacing:-.01em}
+h2 em,.light h2 em{color:var(--navy);font-style:italic}
+p{font-weight:500;color:#2b3752}
+.src{color:#8791a8}
+.card,.light .card,.card.white,.card.gold{background:#fff;color:var(--navy);border:0;border-top:1px solid #d5dbe8;border-radius:0;box-shadow:none;padding:26px 0 8px;cursor:default}
+.card:hover,.card.on{translate:none;scale:1;box-shadow:none;border-top-color:var(--gold)}
+.card::after{display:none}
+.card .big,.card.gold .big,.card.white .big{color:var(--navy);font-weight:500}
+.card:hover .big{scale:1;color:#9a7424}
+.card p{color:#4a556e;font-weight:500}.card .src,.card.gold .src{color:#8791a8}
+.card h3{font-weight:700}
+.tag{border:0;border-bottom:2px solid var(--gold);border-radius:0;color:var(--navy);padding:0 0 4px}
+.node{background:#fff;border:1px solid #d5dbe8;border-radius:0;color:var(--navy)}
+.node b{color:#9a7424}
+.node:hover,.node.on{translate:none;scale:1;box-shadow:none;border-color:var(--navy)}
+.node.on{background:var(--navy);color:#fff}.node.on b{color:var(--gold)}
+.road{height:2px;background:#d5dbe8}.road::after{height:2px;background:var(--gold);width:60px;left:-60px}
+.tab{border:0;border-bottom:2px solid transparent;border-radius:0;color:#8791a8;padding:8px 2px;margin-right:22px}
+.tab:hover{box-shadow:none;translate:none;color:var(--navy)}
+.tab.on,.light .tab.on{background:none;color:var(--navy);border-bottom-color:var(--gold)}
+.light .tab{color:#8791a8;border-color:transparent}.light .tab.on{border-bottom-color:var(--gold)}
+.track{border:0;height:6px;background:#e8ecf4;border-radius:0}
+.fillb{background:var(--navy)}
+.flip:hover{translate:none;scale:1}
+.face{background:#fff;color:var(--navy);border:1px solid #d5dbe8;border-top:1px solid #d5dbe8;border-radius:0;box-shadow:none}
+.face .n{color:#9a7424;font-weight:500}
+.face.back{background:var(--navy);color:#fff;border-color:var(--navy)}.face.back p{color:#fff}.face.back .hint{color:var(--gold)}
+.hint{color:#8791a8}
+.tree,.light .tree{background:#f4f6fa;color:var(--navy)!important;border-left:2px solid var(--gold);border-radius:0}
+.tree i{color:#8791a8}.tree b{color:var(--navy)}
+.tl::before{background:#d5dbe8;height:2px}.tl .fill{background:var(--gold);height:2px}
+.step::before{background:var(--navy);width:12px;height:12px;top:39px}
+.step .d{color:var(--navy);font-weight:500}
+.rn,.rn:hover{background:#fff;border:1px solid #d5dbe8;border-radius:0;color:var(--navy);box-shadow:none;translate:none}
+.rn.end{background:var(--navy);color:#fff;border-color:var(--navy)}
+.rr{height:1px;background:#d5dbe8}
+.photo,.photo:hover{box-shadow:none;translate:none;border-radius:0}
+.role{color:#4a556e}
+ul.plain{color:var(--navy)}ul.plain li::before{width:6px;height:6px}
+.card ul.plain,.card[style] ul.plain{color:var(--navy)!important}
+.cover .logo{box-shadow:none;rotate:0deg}
+.flowline,.pulse{display:none}
+#rail{background:linear-gradient(#d5dbe8,#d5dbe8) 0 16px/100% 2px no-repeat}
+#mark{background:var(--navy);box-shadow:none;height:6px;width:40px;bottom:10px}
+#nav{background:#fff;border:1px solid #d5dbe8;border-radius:0}
+#nav button{border:0;color:var(--navy);width:28px}#nav button:hover{background:#f0f2f7;color:var(--navy)}
+#nav span{color:#8791a8}
 </style>
 </head>
 <body>
@@ -202,7 +259,7 @@ ul.plain{list-style:none;font-size:18px;line-height:1.9}ul.plain li::before{cont
   <div class="kicker"><b>05</b>O repositório</div>
   <h2>O código do projeto é <em>público e aberto</em></h2>
   <div class="grid g2" style="grid-template-columns:1.1fr 1fr;gap:34px">
-    <div class="tree reveal" style="color:#fff">
+    <div class="tree reveal">
       <div><b>checkstepflow / Check-Step-Flow</b> <i>público</i></div>
       <div>├─ index.html <i>1,5 MB · site em página única</i></div>
       <div>├─ guias PT e EN <i>PDF embutidos</i></div>
@@ -240,7 +297,7 @@ ul.plain{list-style:none;font-size:18px;line-height:1.9}ul.plain li::before{cont
   <div class="grid reveal" style="grid-template-columns:1fr 1fr 1.1fr;gap:34px;align-items:start">
     <div><img class="photo" src="assets/clara.jpg" alt="Clara Barroso Martins"><div class="who">Clara Barroso Martins</div><div class="role">Cofundadora<br>Estratégia de conteúdo e pesquisa<br>Estudante de Publicidade</div></div>
     <div><img class="photo" src="assets/joao.jpg" alt="João Victor Picoli Meneghel"><div class="who">João Victor Picoli Meneghel</div><div class="role">Cofundador<br>Produção e gestão de comunidade<br>Estudante de Publicidade</div></div>
-    <div class="card" style="height:290px;cursor:default"><div class="tag">Rede STEP</div><ul class="plain" style="color:#fff"><li>Sociologia</li><li>Psicologia</li><li>Jornalismo</li><li>Economia</li><li>Educação</li></ul></div>
+    <div class="card" style="height:290px"><div class="tag">Rede STEP</div><ul class="plain"><li>Sociologia</li><li>Psicologia</li><li>Jornalismo</li><li>Economia</li><li>Educação</li></ul></div>
   </div>
 </section>
 

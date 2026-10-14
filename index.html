@@ -230,6 +230,54 @@ h2 em,.light h2 em{color:#7a5410;font-style:italic}
 .slide.deep:not(.cover) .face.back{background:var(--gold)}
 .slide.deep:not(.cover) .face .hint{color:#3a4560}
 .slide.deep:not(.cover) p b[style]{color:var(--gold)!important}
+
+/* ===== tela cheia, cores e cantos arredondados ===== */
+:root{--blue:#2f62e8;--teal:#0f9b86;--coral:#e0553f;--violet:#6b4fd8;--tint:#eaf0fc}
+html,body{background:#0b1730}
+.slide.light{background:var(--tint)}
+.slide:not(.deep):not(.light){background:#fff}
+.slide{padding:72px 6vw 110px}
+.slide .grid,.slide .tabs,.slide .chain,.slide .tl,.slide .route,.slide .bar,.slide .explain,.slide .lead,.slide h2{max-width:1400px}
+.card,.light .card,.card.white,.card.gold,.slide.deep:not(.cover) .card,.slide.deep:not(.cover) .card.white{border-radius:20px;border:0!important;box-shadow:0 10px 26px rgba(11,23,48,.16);padding:28px 28px 24px}
+.card:hover,.card.on{box-shadow:0 16px 34px rgba(11,23,48,.26);translate:0 -6px}
+.grid>.card:nth-child(4n+1){background:var(--blue)!important}
+.grid>.card:nth-child(4n+2){background:var(--teal)!important}
+.grid>.card:nth-child(4n+3){background:var(--coral)!important}
+.grid>.card:nth-child(4n+4){background:var(--gold)!important}
+.card.gold{background:var(--gold)!important}
+.card:not(.gold):not(:nth-child(4n)) p,.card:not(.gold):not(:nth-child(4n)) h3,.card:not(.gold):not(:nth-child(4n)) .big,.card:not(.gold):not(:nth-child(4n)) .src,.slide.deep:not(.cover) .card:not(.gold):not(:nth-child(4n)) p,.slide.deep:not(.cover) .card:not(.gold):not(:nth-child(4n)) .src{color:#fff!important}
+.card.gold p,.card.gold h3,.card.gold .big,.card.gold .src,.grid>.card:nth-child(4n+4) p,.grid>.card:nth-child(4n+4) h3,.grid>.card:nth-child(4n+4) .big,.grid>.card:nth-child(4n+4) .src{color:#0b1730!important}
+.card:hover .big{color:inherit!important}
+.tree{border-radius:18px;border-left:0;background:#fff!important;box-shadow:0 10px 26px rgba(11,23,48,.12)}
+.tag{background:rgba(255,255,255,.22);border:0;border-radius:20px;padding:4px 12px;color:inherit}
+.kicker,.light .kicker,.slide.deep:not(.cover) .kicker{background:var(--gold);color:#0b1730;border-radius:20px;padding:6px 16px;font-weight:800}
+.kicker b,.light .kicker b,.slide.deep:not(.cover) .kicker b{color:#0b1730;opacity:.7}
+h2{font-size:clamp(40px,4.2vw,54px)}
+.node{border-radius:18px;border:0;color:#fff;box-shadow:0 8px 20px rgba(11,23,48,.14)}
+.chain .node:nth-of-type(1){background:var(--blue)}.chain .node:nth-of-type(3){background:var(--coral)}.chain .node:nth-of-type(5){background:var(--teal)}
+.node b{color:#fff;opacity:.85}.node.on{background:var(--navy)!important;box-shadow:0 0 0 4px var(--gold)}.node.on b{color:var(--gold)}
+.road{border-radius:4px;height:6px;background:#9fb0d6}.road::after{height:6px}
+.tabs{gap:10px}.tab{border:0;border-radius:24px;background:#fff;color:var(--navy);padding:10px 22px;margin:0;box-shadow:0 4px 12px rgba(11,23,48,.12);font-weight:800}
+.tab.on,.light .tab.on{background:var(--blue);color:#fff;border:0}
+.slide.deep:not(.cover) .tab{background:#1d3166;color:#fff}.slide.deep:not(.cover) .tab.on{background:var(--gold);color:#0b1730}
+.track{height:12px;border-radius:8px}.fillb{border-radius:8px;background:linear-gradient(90deg,var(--blue),var(--teal))!important}
+.face{border-radius:20px;border:0!important;box-shadow:0 10px 26px rgba(11,23,48,.16);background:#fff}
+.flip:nth-child(1) .face:not(.back){border-bottom:8px solid var(--blue)!important}.flip:nth-child(2) .face:not(.back){border-bottom:8px solid var(--teal)!important}.flip:nth-child(3) .face:not(.back){border-bottom:8px solid var(--coral)!important}.flip:nth-child(4) .face:not(.back){border-bottom:8px solid var(--violet)!important}.flip:nth-child(5) .face:not(.back){border-bottom:8px solid var(--gold)!important}
+.flip:nth-child(1) .face.back{background:var(--blue)!important}.flip:nth-child(2) .face.back{background:var(--teal)!important}.flip:nth-child(3) .face.back{background:var(--coral)!important}.flip:nth-child(4) .face.back{background:var(--violet)!important}.flip:nth-child(5) .face.back{background:var(--gold)!important}
+.face.back p,.flip:nth-child(-n+4) .face.back .hint{color:#fff!important}.flip:nth-child(5) .face.back p{color:#0b1730!important}
+.face .n{color:var(--blue)}
+.slide.deep:not(.cover) .tl::before,.tl::before{border-radius:3px;height:4px}.tl .fill{height:4px;border-radius:3px}
+.step::before{border-radius:50%;background:var(--blue)}.step:nth-child(3)::before{background:var(--teal)}.step:nth-child(4)::before{background:var(--coral)}.step:nth-child(5)::before{background:var(--violet)}
+.rn,.rn:hover{border-radius:14px;border:0;color:#fff}.route .rn:nth-child(1){background:var(--blue)}.route .rn:nth-child(3){background:var(--teal)}.route .rn:nth-child(5){background:var(--coral)}.route .rn:nth-child(7){background:var(--violet)}.route .rn.end{background:var(--gold);color:#0b1730}
+.slide.deep:not(.cover) .rn,.slide.deep:not(.cover) .rn:hover{border:0;color:#fff}.slide.deep:not(.cover) .rn.end{color:#0b1730}
+.rr{background:#9fb0d6!important;height:3px}
+.photo,.photo:hover{border-radius:24px;box-shadow:0 12px 28px rgba(11,23,48,.2)}
+.cover .logo{border-radius:32px}
+.cover{background:linear-gradient(135deg,#0b1730,#1b3a8a)!important}
+#nav{border-radius:14px;border:0;box-shadow:0 6px 18px rgba(11,23,48,.2)}#nav button{border-radius:10px}
+#mark{border-radius:4px;background:var(--gold)}
+#rail{background:linear-gradient(#c3cde4,#c3cde4) 0 16px/100% 3px no-repeat}
+ul.plain li::before{border-radius:50%;background:#fff}
 </style>
 </head>
 <body>
@@ -380,23 +428,23 @@ h2 em,.light h2 em{color:#7a5410;font-style:italic}
 <div id="nav"><button id="pv" aria-label="Anterior">◀</button><span id="ct">1 / 10</span><button id="nx" aria-label="Próximo">▶</button></div>
 </div>
 <script>
-const S=[...document.querySelectorAll('.slide')],st=document.getElementById('stage'),mark=document.getElementById('mark');let i=0;
-function fit(){const k=Math.min(innerWidth/1280,innerHeight/720);st.style.transform='translate(-50%,-50%) scale('+k+')'}
+const S=[...document.querySelectorAll('.slide')],st=document.getElementById('stage'),mark=document.getElementById('mark');var i=0;
+function fit(){const k=Math.min(innerWidth/1280,innerHeight/720);st.style.width=innerWidth/k+'px';st.style.height=innerHeight/k+'px';st.style.transform='translate(-50%,-50%) scale('+k+')';if(window.mark)go(i)}
 function count(el){const t=parseFloat(el.dataset.n),d=+el.dataset.d,s=el.dataset.s||'';let t0=null;const f=ts=>{t0=t0||ts;const p=Math.min(1,(ts-t0)/1400),e=1-Math.pow(1-p,3);el.textContent=(t*e).toFixed(d).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g,t>=1000?'.':'')+s;if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}
 function go(n){n=Math.max(0,Math.min(S.length-1,n));i=n;
   S.forEach((s,j)=>{s.classList.toggle('active',j===i);s.classList.toggle('past',j<i)});
-  mark.style.left=(i/(S.length-1))*(1280-26)+'px';document.getElementById('ct').textContent=(i+1)+' / '+S.length;
+  mark.style.left=(i/(S.length-1))*(st.offsetWidth-40)+'px';document.getElementById('ct').textContent=(i+1)+' / '+S.length;
   const cur=S[i];cur.querySelectorAll('[data-n]').forEach(count);
   cur.querySelectorAll('.fillb').forEach(b=>{b.style.width='0';setTimeout(()=>b.style.width=b.dataset.w+'%',60)});
   history.replaceState(null,'','#'+(i+1))}
-addEventListener('resize',fit);fit();
+addEventListener('resize',fit);
 document.getElementById('nx').onclick=()=>go(i+1);document.getElementById('pv').onclick=()=>go(i-1);
 addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key))go(i-1)});
 let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX);addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>60)go(i+(d<0?1:-1));x0=null});
 document.querySelectorAll('.flip').forEach(f=>f.onclick=()=>f.classList.toggle('on'));
 document.querySelectorAll('.node').forEach(n=>n.onclick=()=>{const sl=n.closest('.slide');sl.querySelectorAll('.node').forEach(m=>m.classList.toggle('on',m===n));sl.querySelectorAll('.explain .panel').forEach(p=>p.classList.toggle('on',p.id===n.dataset.p))});
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{const sl=t.closest('.slide');sl.querySelectorAll('.tab').forEach(m=>m.classList.toggle('on',m===t));sl.querySelectorAll(':scope > .panel').forEach(p=>p.classList.toggle('on',p.id===t.dataset.p))});
-go((parseInt(location.hash.slice(1))||1)-1);
+fit();go((parseInt(location.hash.slice(1))||1)-1);
 </script>
 </body>
 </html>

@@ -522,6 +522,15 @@ ul.plain li::before{background:var(--gold)}
 .chain .node{flex:0 0 200px!important}
 
 .cover-slogan,.slogan,.thanks .slogan{color:#fff!important;font-style:normal!important;font-weight:700!important}
+
+/* linha dourada acende uma de cada vez */
+.chain .road{height:6px;background:#2a4075;position:relative;overflow:hidden;border-radius:3px}
+.chain .road::after{content:"";position:absolute;inset:0;width:100%;left:0;background:var(--gold);transform:scaleX(0);transform-origin:left;animation:none}
+.active .chain .road::after{animation:acende .9s ease-out forwards}
+.active .chain .road:nth-of-type(2)::after{animation-delay:.6s}
+.active .chain .road:nth-of-type(4)::after{animation-delay:1.7s}
+.active .chain .road:nth-of-type(6)::after{animation-delay:2.8s}
+@keyframes acende{to{transform:scaleX(1)}}
 </style>
 </head>
 <body>

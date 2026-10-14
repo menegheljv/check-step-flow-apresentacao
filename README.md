@@ -2,6 +2,7 @@
 
 Apresentação em 10 slides sobre o repositório do Check Step Flow, projeto de alfabetização midiática.
 
-Navegação: setas do teclado ou clique nas metades da tela.
+- Slides: https://menegheljv.github.io/check-step-flow-apresentacao/
+- Projeto: https://checkstepflow.github.io/Check-Step-Flow/
 
-Projeto: https://checkstepflow.github.io/Check-Step-Flow/
+Navegação: setas do teclado, botões na tela ou deslizar no celular.
